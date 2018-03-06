@@ -13,6 +13,7 @@ and open the template in the editor.
 body{
     margin: 0px;
     height: 100%;
+    padding-top: 3vh;
 }
 #grid{
     display: grid;
@@ -54,6 +55,15 @@ body{
     text-align: center;
     border: 1px solid black;
 }
+.toggle{
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 40px;
+    display: none;
+    
+}
 @media screen and (max-width: 550px){
     /*
     Mobiler
@@ -84,8 +94,10 @@ body{
     }
     #grid > main{
         text-align: center;
-        border: 1px solid black;
         margin-bottom: 10px;
+    }
+    #grid > section.main{
+        border: 1px solid black;
     }
     #grid > main > section.facebook{
         display: none;
@@ -94,6 +106,13 @@ body{
         display: none;
     }
     #grid > footer{}
+    /* Mobilknapp */
+    .toggle{
+        display: block;        
+    }
+    .none{
+        display: none;
+    }
 }
 @media screen and (min-width: 550px) and (max-width: 1024px){
     /*
@@ -128,8 +147,9 @@ Tablets
         padding: 10px 10px;
         font-size: 20px;
     }
-    #grid > main{
+    #grid > main > section.main{
         border: 1px solid black;
+        height: 500px;
     }
     #grid > main > section{
         text-align: center;
@@ -142,7 +162,7 @@ Tablets
         display: none;
     }
     #grid > footer{}
-  
+    
 }
 @media screen and (min-width: 1025px){
     /*
@@ -186,11 +206,21 @@ Desktops
     .inside-grid{
         text-align: center;
         display: grid;
-        grid-template-columns: 19% 60% 19%;
+        grid-template-columns: 23% 55% 19%;
         grid-gap: 10px;
         padding: 10px;
     }
-    .inside-grid > section{
-        border: 1px solid black;
+    /* border är vit?*/
+    .inside-grid > section.main{
+        border: 1px solid white;
+    }
+    div.instaimg > a > img{
+        width: 70%;
+        margin: 5px;
+    }
+    div.instaimg > a > img:hover{
+        opacity: 0.8;
+        -moz-opacity: 0.8;
+        -webkit-opacity:0.8;
     }
 }
