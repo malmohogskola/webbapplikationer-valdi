@@ -1,0 +1,193 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-feb-08, 19:08:55
+    Author     : hanne
+*/
+/*
+  Här skiver ni generella egenskaper
+*/
+body{
+    margin: 0px;
+    height: 100%;
+}
+#grid{
+    display: grid;
+    /* container */
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+}   
+#grid > header{
+    grid-area: header;
+}
+#grid > nav{
+    grid-area: nav;
+}
+#grid > nav > ul{
+    list-style-type: none;
+    padding: 0;
+}
+#grid > nav > ul > li > a{     
+    text-decoration: none;
+    color: #322F2F;  
+    font-size: 18px; 
+}
+#grid > nav > ul > li a:hover:not(.active) {
+    background-color: #eeeeee;
+}
+#grid > nav > ul > li a.active {    
+    font-weight: bold;
+}
+#grid > nav > ul > li a:active {
+    color: black;
+    background-color: #eeeeee;
+}
+#grid > main{
+    grid-area: main;
+}
+#grid > footer{
+    grid-area: footer;
+    text-align: center;
+    border: 1px solid black;
+}
+@media screen and (max-width: 550px){
+    /*
+    Mobiler
+    */
+    #grid{
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+    #grid > header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #grid > nav{}
+    #grid > nav > ul{
+        text-align: center   
+    }
+    #grid > nav > ul > li {
+        margin: 10px;
+    }
+    #grid > nav > ul > li > a{
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+    #grid > main{
+        text-align: center;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
+    #grid > main > section.facebook{
+        display: none;
+    }
+    #grid > main > section.instagram{
+        display: none;
+    }
+    #grid > footer{}
+}
+@media screen and (min-width: 550px) and (max-width: 1024px){
+    /*
+Tablets
+    */
+    body {margin-top: 20px;}
+    #grid{
+        grid-gap: 10px;
+        grid-template-columns: 25% auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            "header main main main"
+            "nav main main main"
+            "nav main main main"
+            "nav main main main"
+            "footer footer footer footer";
+    }
+    #grid > header{
+        
+    }
+    #grid > header > a > img{
+        width: 100%;
+    }
+    #grid nav{}
+    #grid > nav > ul{
+        text-align: center   
+    }
+    #grid > nav > ul > li {
+        margin: 10px;
+    }
+    #grid > nav > ul > li > a{
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+    #grid > main{
+        border: 1px solid black;
+    }
+    #grid > main > section{
+        text-align: center;
+        margin-left: -0%;
+    }
+    #grid > main > section.facebook{
+        display: none;
+    }
+    #grid > main > section.instagram{
+        display: none;
+    }
+    #grid > footer{}
+  
+}
+@media screen and (min-width: 1025px){
+    /*
+Desktops
+    */
+    #grid{
+        display: grid;
+        
+        grid-template-columns: auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+        grid-gap: 10px;
+    }   
+    #grid > header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #grid > nav{
+        margin-bottom: 40px;
+    }
+    #grid > nav > ul{
+        text-align: center   
+    }
+    #grid > nav > ul > li {    
+        display:inline;
+    }
+    #grid > nav > ul > li > a{
+        padding: 20px 60px;
+    }
+    #grid > main{        
+    }
+    .inside-grid{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 19% 60% 19%;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .inside-grid > section{
+        border: 1px solid black;
+    }
+}
