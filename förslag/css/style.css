@@ -148,6 +148,9 @@ Tablets
     /*
 Desktops
     */
+    .follow{
+        display: none;
+    }
     #grid{
         display: grid;
         
