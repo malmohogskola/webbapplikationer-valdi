@@ -7,11 +7,14 @@ var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
 
 var index = require('./routes/index');
+var smycken = require('./routes/smycken');
+var kontakt = require('./routes/kontakt');
+var omoss = require('./routes/omoss');
 
 var app = express();
 
 // view engine setup
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/layouts/'}));
+app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/views/'}));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
@@ -24,6 +27,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/smycken', smycken);
+app.use('/kontakt', kontakt);
+app.use('/omoss', omoss);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
