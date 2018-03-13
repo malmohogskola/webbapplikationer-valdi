@@ -8,23 +8,49 @@
     </head>
         <body>
             <container id="layout">
-                    <header>
-                            <a href="/"><img src="/images/valdismyckenlogga.png" alt="header"></a>
-                    </header>
+                <header>
+                    <a href="/"><img src="/images/valdismyckenlogga.png" alt="header"></a>
+                </header>
                 <div id="nav" class="ui secondary pointing menu row centered">
-                    <a class="active item" href="index">
-                        Home
+                    <a class="item active" href="/">
+                        Hem
                     </a>
-                    <a class="item" href="smycken" >
-                        Smycken
+                    <a class="ui dropdown item" tabindex="0">Smycken<i class="dropdown icon"></i>
+                        <div class="menu transition hidden">
+                            <div class="ui left pointing dropdown link item">
+                                <i class="dropdown icon"></i>
+                                Ringar
+                                <div class="menu">
+                                    <div class="item">Förlovningsringar</div>
+                                    <div class="item">Vigselringar</div>
+                                    <div class="item">Ringar</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                Halsband
+                            </div>
+                            <div class="item">
+                                Örhängen
+                            </div>
+                            <div class="item">
+                                Specialbeställningar
+                            </div>
+                            <div class="item">
+                                Varumärken
+                            </div>
+                        </div>
                     </a>
                     <a class="item" href="omoss">
                         Om oss 
+                    </a>
+                    <a class="item hidden" href="aktuellt">
+                        Aktuellt 
                     </a>
                     <a class="item" href="kontakt">
                         Kontakt
                     </a>
                 </div>
+                    
                 <section id="main">
             <!--Main content-->
             {{{ body }}}
