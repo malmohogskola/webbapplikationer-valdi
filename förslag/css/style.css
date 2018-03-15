@@ -66,7 +66,6 @@ body{
 }
 #active{
     font-weight: bolder;
-    display: none;
 }
 
 @media screen and (max-width: 550px){
@@ -152,6 +151,9 @@ Tablets
         width: 100%;
     }
     #grid nav{}
+    #grid nav #aktuellt{
+        display: none;
+    }
     #grid > nav > ul{
         text-align: center
     }
@@ -214,6 +216,9 @@ Desktops
     }
     #grid > nav{
         margin-bottom: 40px;
+    }
+    #grid nav #aktuellt{
+        display: none;
     }
     #grid > nav > ul{
         text-align: center
