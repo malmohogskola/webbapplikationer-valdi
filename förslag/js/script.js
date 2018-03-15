@@ -18,3 +18,4 @@ function mobilNav(){
         menu.className = "none";
     }
 }
+

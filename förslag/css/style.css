@@ -64,10 +64,20 @@ body{
     display: none;
     
 }
+#active{
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 550px){
     /*
     Mobiler
     */
+    #nav{
+        display: block;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
     #grid{
         grid-template-areas:
             "header"
@@ -118,6 +128,9 @@ body{
     /*
 Tablets
     */
+    #nav{
+        display: block;
+    }
     body {margin-top: 20px;}
     #grid{
         grid-gap: 10px;
@@ -168,6 +181,14 @@ Tablets
     /*
 Desktops
     */
+    #nav{    
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    #nav > a{
+        padding: 10px 70px;
+    }
     .follow{
         display: none;
     }
