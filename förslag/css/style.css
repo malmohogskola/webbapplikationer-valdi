@@ -3,7 +3,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
-/* 
+/*
     Created on : 2018-feb-08, 19:08:55
     Author     : hanne
 */
@@ -21,7 +21,7 @@ body{
     width: 99%;
     margin-left: auto;
     margin-right: auto;
-}   
+}
 #grid > header{
     grid-area: header;
 }
@@ -32,15 +32,15 @@ body{
     list-style-type: none;
     padding: 0;
 }
-#grid > nav > ul > li > a{     
+#grid > nav > ul > li > a{
     text-decoration: none;
-    color: #322F2F;  
-    font-size: 18px; 
+    color: #322F2F;
+    font-size: 18px;
 }
 #grid > nav > ul > li a:hover:not(.active) {
     background-color: #eeeeee;
 }
-#grid > nav > ul > li a.active {    
+#grid > nav > ul > li a.active {
     font-weight: bold;
 }
 #grid > nav > ul > li a:active {
@@ -62,10 +62,11 @@ body{
     text-align: center;
     font-size: 40px;
     display: none;
-    
+
 }
 #active{
     font-weight: bolder;
+    display: none;
 }
 
 @media screen and (max-width: 550px){
@@ -94,7 +95,7 @@ body{
     }
     #grid > nav{}
     #grid > nav > ul{
-        text-align: center   
+        text-align: center
     }
     #grid > nav > ul > li {
         margin: 10px;
@@ -119,7 +120,7 @@ body{
     #grid > footer{}
     /* Mobilknapp */
     .toggle{
-        display: block;        
+        display: block;
     }
     .none{
         display: none;
@@ -145,14 +146,14 @@ Tablets
             "footer footer footer footer";
     }
     #grid > header{
-        
+
     }
     #grid > header > a > img{
         width: 100%;
     }
     #grid nav{}
     #grid > nav > ul{
-        text-align: center   
+        text-align: center
     }
     #grid > nav > ul > li {
         margin: 10px;
@@ -176,13 +177,13 @@ Tablets
         display: none;
     }
     #grid > footer{}
-    
+
 }
 @media screen and (min-width: 1025px){
     /*
 Desktops
     */
-    #nav{    
+    #nav{
         justify-content: center;
         align-content: center;
         text-align: center;
@@ -195,7 +196,7 @@ Desktops
     }
     #grid{
         display: grid;
-        
+
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -203,7 +204,7 @@ Desktops
             "main"
             "footer";
         grid-gap: 10px;
-    }   
+    }
     #grid > header{
         display: flex;
         align-items: center;
@@ -215,15 +216,15 @@ Desktops
         margin-bottom: 40px;
     }
     #grid > nav > ul{
-        text-align: center   
+        text-align: center
     }
-    #grid > nav > ul > li {    
+    #grid > nav > ul > li {
         display:inline;
     }
     #grid > nav > ul > li > a{
         padding: 20px 60px;
     }
-    #grid > main{        
+    #grid > main{
     }
     .inside-grid{
         text-align: center;
