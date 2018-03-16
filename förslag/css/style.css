@@ -25,6 +25,20 @@ body{
 #grid > header{
     grid-area: header;
 }
+#menu-div{
+  background-color: #e0e0d1;
+  border: 1px solid #000;
+  box-shadow: 1px 2px #e0e0d1;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#menu-div:hover {
+  background-color: #d6d6c2;
+}
+#menu-div > #menu-btn {
+  text-align: center;
+}
 #grid > nav{
     grid-area: nav;
 }
@@ -82,6 +96,7 @@ body{
     #grid{
         grid-template-areas:
             "header"
+            "menu"
             "nav"
             "main"
             "footer";
@@ -92,7 +107,13 @@ body{
         justify-content: center;
         margin-bottom: 20px;
     }
-    #grid > nav{}
+    #grid > menu > #menu-div{
+      background-color: red;
+      border: 1px black;
+    }
+    #grid > nav{
+        display: none;
+    }
     #grid > nav > ul{
         text-align: center
     }
@@ -150,9 +171,11 @@ Tablets
     #grid > header > a > img{
         width: 100%;
     }
-    #grid nav{}
     #grid nav #aktuellt{
         display: none;
+    }
+    #menu-btn {
+      display: none;
     }
     #grid > nav > ul{
         text-align: center
@@ -195,6 +218,9 @@ Desktops
     }
     .follow{
         display: none;
+    }
+    #menu-btn {
+      display: none;
     }
     #grid{
         display: grid;
