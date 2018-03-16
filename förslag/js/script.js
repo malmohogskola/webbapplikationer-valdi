@@ -3,8 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-window.onload = start;
-
 var showMenu = document.querySelector("#menu-btn");
 
 showMenu.addEventListener("click", function() {
@@ -18,17 +16,3 @@ showMenu.addEventListener("click", function() {
     }
   }
 });
-
-function start(){
-    console.log("Hej");
-    document.getElementById("mobilMenu").addEventListener("click", mobilNav);
-}
-
-function mobilNav(){
-    var menu = document.getElementById("menu");
-    if(menu.className === "none"){
-        menu.className = "";
-    }else{
-        menu.className = "none";
-    }
-}
