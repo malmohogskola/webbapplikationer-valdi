@@ -76,7 +76,9 @@ body{
     text-align: center;
     font-size: 40px;
     display: none;
-
+}
+.class-hidden{
+    display: none;
 }
 #active{
     font-weight: bolder;

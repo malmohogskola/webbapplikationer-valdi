@@ -4,15 +4,25 @@
  * and open the template in the editor.
  */
 var showMenu = document.querySelector("#menu-btn");
-var ringar = document.querySelector("#dropdown-ringar");
+var rings = document.querySelector("#dropdown-rings");
+var necklace = document.querySelector("#necklace")
 
 
-ringar.addEventListener("mouseover", function(){
+rings.addEventListener("mouseover", function(){
   /* Tar bort classen som lägger ringar-menyn till vänster
   om det är den mobila versionen */
-  var ringarClass = document.querySelector("#delete-class");
+  var ringsClass = document.querySelector("#delete-class");
   if (window.innerWidth <= 480) {
-    ringarClass.removeAttribute("class");
+    ringsClass.removeAttribute("class");
+  }
+});
+
+necklace.addEventListener("mouseover", function(){
+  /* Tar bort classen som lägger ringar-menyn till vänster
+  om det är den mobila versionen */
+  var necklaceClass = document.querySelector("#delete-class");
+  if (window.innerWidth <= 480) {
+    necklaceClass.classList.add("class-hidden");
   }
 });
 
