@@ -8,12 +8,18 @@ var ringar = document.querySelector("#dropdown-ringar");
 
 
 ringar.addEventListener("mouseover", function(){
-  console.log("hej ringarnas funktion")
+  /* Tar bort classen som lägger ringar-menyn till vänster
+  om det är den mobila versionen */
+  var ringarClass = document.querySelector("#delete-class");
+  if (window.innerWidth <= 480) {
+    ringarClass.removeAttribute("class");
+  }
 });
 
 
 showMenu.addEventListener("click", function() {
-  console.log("inside the function")
+  /* Genom knappklick visas Menyn om den döljs och döljs
+  om den visas */
   var nav = document.querySelector("#nav");
   if (window.innerWidth <= 480) {
     if (nav.style.display === "none") {
