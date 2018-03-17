@@ -4,6 +4,13 @@
  * and open the template in the editor.
  */
 var showMenu = document.querySelector("#menu-btn");
+var ringar = document.querySelector("#dropdown-ringar");
+
+
+ringar.addEventListener("mouseover", function(){
+  console.log("hej ringarnas funktion")
+});
+
 
 showMenu.addEventListener("click", function() {
   console.log("inside the function")
