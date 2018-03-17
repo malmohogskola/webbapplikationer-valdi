@@ -80,6 +80,10 @@ body{
 .class-hidden{
     display: none;
 }
+
+ul {
+  list-style: none;
+}
 #active{
     font-weight: bolder;
 }
