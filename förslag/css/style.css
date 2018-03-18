@@ -88,6 +88,14 @@ ul {
     font-weight: bolder;
 }
 
+#map {
+  width: 70%;
+  height: 30%;
+  background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 550px){
     /*
     Mobiler
