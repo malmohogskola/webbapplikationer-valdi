@@ -24,9 +24,9 @@ and open the template in the editor.
             </div>
             <nav id="nav" class="ui secondary pointing menu row centered">
                 <a class="item" href="index.html">
-                    Hem
-                </a>
-                 <div class="ui dropdown item" tabindex="0">Smycken<i class="dropdown icon"></i>
+                        Hem
+                    </a>
+                     <div class="ui dropdown item" tabindex="0">Smycken<i class="dropdown icon"></i>
                     <div class="menu transition hidden">
                         <div id="dropdown-rings" class="ui left pointing dropdown link item">
                             <i class="dropdown icon"></i>Ringar
@@ -43,35 +43,45 @@ and open the template in the editor.
                     </div>
                 </div>
                 <a class="item" href="omoss.html">
-                    Om oss
-                </a>
-                <a class="item active" href="aktuellt.html">
-                    Aktuellt
-                </a>
+                        Om oss
+                    </a>
+                <a id="none" class="item active" href="foljoss.html">Följ oss</a>
+               
                 <a class="item" href="kontakt.html">
-                    Kontakt
-                </a>
-            </nav>
-            <main class="inside-grid">
-                <section class="facebook ui container">
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaldismycken%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="1200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        Kontakt
+                    </a>
+                </nav>
+            <main class="inside-grid follow">
+                <section class="facebook">  
                 </section>
-                <section class="main"><h1>Aktuellt</h1></section>
-                <section class="instagram container">
-                    <!-- BYT -->
-                    <a href="https://www.instagram.com/valdismycken/" target="_blank">"Följ oss på Instagram"</a>
-                    <div class="gallery">
+                <section class="ui grid main foll">
+                    <article class="eight wide column facebook">
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaldismycken%2F&tabs=timeline&width=300&height=2800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="1600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    </article>
+                    <article class="eight wide column instagram">
                         <div id="instafeed" class="row"></div>
+                    </article>
+                </section>
+
+                <section class="instagram">
+                    <div class="gallery">
                     </div>
                 </section>
             </main>
-            <footer><h4>footer</h4></footer>
+            <footer>
+                <a href="https://www.instagram.com/valdismycken/"><img class="instapic" src="img/social/insta.png"></a>
+                <a href="https://www.facebook.com/valdismycken/"><img class="facepic" src="img/social/facebook.png"></a>
+                
+                <br><br>
+                <p>Valdi Smycken AB, Kaggensgatan 7, 392 32 Kalmar. Tfn: 0480-422525.</p>
+            </footer>
         </div>
         <script src="js/script.js"></script>
         <!-- jQuery -->
         <script src="js/jquery.min.js"></script>
         <!-- Semantic -->
         <script src="semantic-ui/dist/semantic.min.js"></script>
+
         <script src="js/jQ.js"></script>
         <!-- Instagram module -->
         <script src="js/instafeed.min.js"></script>

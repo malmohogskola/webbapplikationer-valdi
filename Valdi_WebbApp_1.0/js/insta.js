@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     var userFeed = new Instafeed({
         get: 'user',
-        userId: '6644124',
+        userId: '6644124', //valdi __ > 248716294
         limit: 3,
         resolution: 'standard_resolution',
         accessToken: '6644124.1677ed0.e63015db01954d3d8c26a66e4c20a8b1',
