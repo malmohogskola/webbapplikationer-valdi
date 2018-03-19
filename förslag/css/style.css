@@ -96,6 +96,14 @@ ul {
   margin-right: auto;
 }
 
+.presentation{
+    font-family: 'Parisienne', cursive;
+    font-size: 35px;
+    padding: 0 30px 0 30px;
+}
+
+
+
 @media screen and (max-width: 550px){
     /*
     Mobiler
