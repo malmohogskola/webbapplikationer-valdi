@@ -9,15 +9,10 @@ and open the template in the editor.
         <title>Valdi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
         <link href="../semantic-ui/dist/semantic.min.css" rel="stylesheet">
         <link href="../css/magnific.css" rel="stylesheet">
         <link rel="stylesheet" media="screen" href="../css/style.css ">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
-        </script>
-        <script src="../sss/sss.min.js"></script>
-        <link rel="stylesheet" href="../sss/sss.css" type="text/css" media="all">
-        <script>jQuery(function($) {$('.slider').sss();});</script>
     </head>
     <body>
         <div id="grid">
@@ -71,17 +66,60 @@ and open the template in the editor.
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaldismycken%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="1200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </section>
                 <section class="main">
-                    <div class="slider">
-                        <img src="../img/unik/guldringdiamant.jpg" />
-                        <img src="../img/unik/IngridPstor.gif" />
-                        <img src="../img/unik/guldangelunik.jpg" />
-                        <img src="../img/unik/guldbroschturmalinunik.jpg" />
-                        <img src="../img/unik/hamratarmbandstor.gif" />
-                        <img src="../img/unik/parlhalsbandguldlas.jpg" />
-                        <img src="../img/unik/safirobrillstor.gif" />
-                        <img src="../img/unik/silverringarunika.jpg" />
-                        <img src="../img/unik/solbroschstor.gif" />
-                        <img src="../img/unik/valdi60.jpg" />
+                    <div class="slideshow-container">
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/guldringdiamant.jpg" style="width:100%"/>
+                            <div class="text">Unik guldring med diamanter</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/IngridPstor.gif" style="width:100%"/>
+                            <div class="text">Unik ring</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/guldangelunik.jpg" style="width:100%"/>
+                            <div class="text">Halsband med ängel i guld</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/guldbroschturmalinunik.jpg" style="width:100%"/>
+                            <div class="text">Månbrosch i guld</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/hamratarmbandstor.gif" style="width:100%"/>
+                            <div class="text">Hamrat armband</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/parlhalsbandguldlas.jpg" style="width:100%"/>
+                            <div class="text">Pärlhalsband med guldlås</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/safirobrillstor.gif" style="width:100%"/>
+                            <div class="text">Fantastiska ringar</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/silverringarunika.jpg" style="width:100%"/>
+                            <div class="text">Svarta ringar</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/solbroschstor.gif" style="width:100%"/>
+                            <div class="text">Solbrosch i metall</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/unik/valdi60.jpg" style="width:100%"/>
+                            <div class="text">Svarta örhängen</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                 </section>
                 <section class="instagram">
@@ -106,6 +144,6 @@ and open the template in the editor.
         <!-- Insta script -->
         <script src="../js/insta.js"></script>
         <!-- Vårat egna JavaScript -->
-        <script src="js/script.js"></script>
-    </body>
+        <script src="../js/script.js"></script>
+        <script src="../js/slide.js"></script>
 </html>

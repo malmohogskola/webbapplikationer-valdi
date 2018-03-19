@@ -10,15 +10,9 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
         <link href="semantic-ui/dist/semantic.min.css" rel="stylesheet">
         <link href="css/magnific.css" rel="stylesheet">
-        <link rel="stylesheet" media="screen" href="css/style.css ">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
-        </script>
-        <script src="sss/sss.min.js"></script>
-        <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
-        <script>jQuery(function($) {$('.slider').sss();});</script>
+        <link rel="stylesheet" media="screen" href="css/style.css ">        
     </head>
     <body>
         <div id="grid">
@@ -72,24 +66,61 @@ and open the template in the editor.
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaldismycken%2F&tabs=timeline&width=340&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="1200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </section>
                 <section class="main">
-                    <div class="slider">
-                        <figure>
-                            <img src="img/slide3.jpg">
-                        </figure>
-                        <figure>
-                            <img src="img/slide1.jpg">
-                        </figure>
-                        <figure>
-                            <img src="img/slide2.jpg">
-                        </figure>
-                        <figure>
-                            <img src="img/slide7.jpg">
-                        </figure>
+                    <div class="slideshow-container">
+                        
+                        <a href="templates/ringar/forlovningsringar.html" class="mySlides fade">
+                            <img src="img/slide3.jpg" style="width:100%">
+                        </a>
+                        
+                        <a href="templates/ringar/ringar.html" class="mySlides fade">
+                            <img src="img/slide2.jpg" style="width:100%">
+                        </a>
+                        
+                        <a href="templates/ringar/forlovningsringar.html" class="mySlides fade">
+                            <img src="img/slide1.jpg" style="width:100%">
+                        </a>
+                        
+                        <a href="templates/halsband.html" class="mySlides fade">
+                            <img src="img/slide7.jpg" style="width:100%">
+                        </a>
                     </div>
     
                     <p class="presentation">Vi finns mitt på vackra Kvarnholmen i Kalmar. 
                         <br>I vår butik hittar du ett noga utvalt sortiment av smycken och vigselringar. Har du en egen idé så kan vi även skapa skräddarsydda smycken efter dina önskemål i vår verkstad. </p>
-                        <p class="presentation">Varmt välkommen önskar guldsmederna <br><b> Ylva & Eva!</b></p>
+                    <p class="presentation">Varmt välkommen önskar guldsmederna <br><b> Ylva & Eva!</b></p>
+                    
+                    <div class="ui three column grid">
+                        <div class="column">
+                            <a href="templates/special.html" class="ui fluid card">
+                                <div class="image">
+                                    <img class="port" src="img/unik/guldringdiamant.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="header">Här kan du se ett urval av alla unika beställningar som vi har tillverkat</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="omoss.html" class="ui fluid card">
+                                <div class="image">
+                                    <img class="port" src="img/verkstad/verkstad.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="header">Verkstaden är hjärtat i vår verksamhet!</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="templates/ringar/vigselringar.html" class="ui fluid card">
+                                <div class="image">
+                                    <img class="port" src="img/ringar/vigselringar/GB41.jpg">
+                                </div>
+                                <div class="content">
+                                    <div class="header">Vigselringar</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </section>
                 <section class="instagram">
                     <!-- BYT -->
@@ -114,5 +145,6 @@ and open the template in the editor.
         <script src="js/insta.js"></script>
         <!-- Vårat egna JavaScript -->
         <script src="js/script.js"></script>
+        <script src="js/slide.js"></script>
     </body>
 </html>

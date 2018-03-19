@@ -9,15 +9,10 @@ and open the template in the editor.
         <title>Valdi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
         <link href="../semantic-ui/dist/semantic.min.css" rel="stylesheet">
         <link href="../css/magnific.css" rel="stylesheet">
         <link rel="stylesheet" media="screen" href="../css/style.css ">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
-        </script>
-        <script src="../sss/sss.min.js"></script>
-        <link rel="stylesheet" href="../sss/sss.css" type="text/css" media="all">
-        <script>jQuery(function($) {$('.slider').sss();});</script>
     </head>
     <body>
         <div id="grid">
@@ -71,18 +66,65 @@ and open the template in the editor.
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaldismycken%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="1200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </section>
                 <section class="main">
-                    <div class="slider">
-                        <img src="../img/halsband/AG212.gif" />
-                        <img src="../img/halsband/AV20.jpg" />
-                        <img src="../img/halsband/AV21.jpg" />
-                        <img src="../img/halsband/CU23.jpg" />
-                        <img src="../img/halsband/CU24.jpg" />
-                        <img src="../img/halsband/I-GOT-BALLS-pendant-by-MoM.gif" />
-                        <img src="../img/halsband/klohangesilver.jpg" />
-                        <img src="../img/halsband/OrbitpendantMoM.gif" />
-                        <img src="../img/halsband/valdi27.jpg" />
-                        <img src="../img/halsband/valdi28.jpg" />
-                        <img src="../img/halsband/valdi29.jpg" />
+                    <div class="slideshow-container">
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/AG212.gif" style="width:100%"/>
+                            <div class="text">Hängsmycke med flicka i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/AV20.jpg" style="width:100%"/>
+                            <div class="text">Färglada stenar på kedja</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/AV21.jpg" style="width:100%"/>
+                            <div class="text">Hängsmycke i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/CU23.jpg" style="width:100%"/>
+                            <div class="text">Fjäder i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/CU24.jpg" style="width:100%"/>
+                            <div class="text">Fjäril i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/I-GOT-BALLS-pendant-by-MoM.gif" style="width:100%"/>
+                            <div class="text">I Got Balls halsband</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/klohangesilver.jpg" style="width:100%"/>
+                            <div class="text">Klohänge i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/OrbitpendantMoM.gif" style="width:100%"/>
+                            <div class="text">Hängsmycke med omloppsbana</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/valdi27.jpg" style="width:100%"/>
+                            <div class="text">Hjärta i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/valdi28.jpg" style="width:100%"/>
+                            <div class="text">Hjärta i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../img/halsband/valdi29.jpg" style="width:100%"/>
+                            <div class="text">Hjärta i guld</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                 </section>
                 <section class="instagram">
@@ -107,6 +149,7 @@ and open the template in the editor.
         <!-- Insta script -->
         <script src="../js/insta.js"></script>
         <!-- Vårat egna JavaScript -->
-        <script src="js/script.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="../js/slide.js"></script>
     </body>
 </html>

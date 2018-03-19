@@ -9,15 +9,10 @@ and open the template in the editor.
         <title>Valdi</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
         <link href="../../semantic-ui/dist/semantic.min.css" rel="stylesheet">
         <link href="../../css/magnific.css" rel="stylesheet">
         <link rel="stylesheet" media="screen" href="../../css/style.css ">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
-        </script>
-        <script src="../../sss/sss.min.js"></script>
-        <link rel="stylesheet" href="../../sss/sss.css" type="text/css" media="all">
-        <script>jQuery(function($) {$('.slider').sss();});</script>
     </head>
     <body>
         <div id="grid">
@@ -70,14 +65,41 @@ and open the template in the editor.
                 <section class="facebook">
                     <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fvaldismycken%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="1200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                 </section>
-                <section class="main">
-                    <div class="slider">
-                        <img src="../../img/ringar/forlovningsringar/GB41.jpg" />
-                        <img src="../../img/ringar/forlovningsringar/GB51.jpg" />
-                        <img src="../../img/ringar/forlovningsringar/GB52.jpg" />
-                        <img src="../../img/ringar/forlovningsringar/GB53.jpg" />
-                        <img src="../../img/ringar/forlovningsringar/GB55.jpg" />
-                        <img src="../../img/ringar/forlovningsringar/GB57.jpg" />
+                <section class="main">>
+                    <div class="slideshow-container">
+                        
+                        <div class="mySlides fade">
+                            <img src="../../img/ringar/forlovningsringar/GB41.jpg" style="width:100%"/>
+                            <div class="text">Smala eleganta förlovningsringar</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../../img/ringar/forlovningsringar/GB51.jpg" style="width:100%"/>
+                            <div class="text">Förlovningsringar i guld</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../../img/ringar/forlovningsringar/GB52.jpg" style="width:100%"/>
+                            <div class="text">Förlovningsringar i guld eller silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../../img/ringar/forlovningsringar/GB53.jpg" style="width:100%"/>
+                            <div class="text">Förlovningsringar i guld eller silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../../img/ringar/forlovningsringar/GB55.jpg" style="width:100%"/>
+                            <div class="text">Förlovningsringar i silver</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                            <img src="../../img/ringar/forlovningsringar/GB57.jpg" style="width:100%"/>
+                            <div class="text">Förlovningsringar i guld</div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                 </section>
                 <section class="instagram">
@@ -102,7 +124,8 @@ and open the template in the editor.
         <!-- Insta script -->
         <script src="../../js/insta.js"></script>
         <!-- Vårat egna JavaScript -->
-        <script src="js/script.js"></script>
+        <script src="../../js/script.js"></script>
+        <script src="../../js/slide.js"></script>
 
     </body>
 </html>
