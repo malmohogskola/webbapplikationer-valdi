@@ -15,6 +15,10 @@ body{
     height: 100%;
     padding-top: 3vh;
 }
+.activey{
+    font-weight: bolder !important;
+    border-bottom: 2px solid !important;
+}
 main.inside-grid.center{
     text-align: center;
 }
@@ -50,6 +54,9 @@ main.inside-grid.center{
 }
 #grid > main{
     grid-area: main;
+}
+iframe{
+    width: 100%;
 }
 #grid > footer{
     grid-area: footer;
@@ -152,6 +159,14 @@ img {vertical-align: middle;}
     /*
     Mobiler
     */
+    #map{
+        width: 20%;
+        
+        background-color: grey;
+        margin-left: 10%;
+        margin-right: auto;
+        position: absolute;
+    }
     .prev, .next,.text {font-size: 11px}
     #grid{
         grid-template-areas:
@@ -267,6 +282,9 @@ Tablets
     }
     div.ui.link.cards{
         justify-content: center;
+    }
+    .border-right{
+        border-right: 0.1px solid black;
     }
     #map {
         width: 50%;
