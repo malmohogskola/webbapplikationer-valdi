@@ -347,9 +347,7 @@ Tablets
     #grid > main > section.instagram{
         display: none;
     }
-    div.ui.link.cards{
-        justify-content: center;
-    }
+    
     .border-right{
         border-right: 0.1px solid black;
     }
@@ -464,10 +462,7 @@ Desktops
     footer > a > img.instapic:hover, footer > a > img.facepic:hover{
         background-color: #d6d6c2;
     }
-    /* start */
-    div.ui.link.cards{
-        justify-content: center;
-    }
+    
     p.margin-top.presentation{color:#808080;}
     .presentation{
         font-family: 'Parisienne', cursive;
