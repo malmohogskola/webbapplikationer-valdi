@@ -40,7 +40,6 @@ main.inside-grid.center{
 }
 #menu-div{
     background-color: #e0e0d1;
-    border: 1px solid #000;
     box-shadow: 1px 2px #e0e0d1;
     width: 30%;
     margin-left: auto;
@@ -75,7 +74,7 @@ ul.contact {
     list-style: none;
 }
 .googleMap{
-    margin-top: 40px; 
+    margin-top: 40px;
 }
 /* Om oss */
 
@@ -168,12 +167,12 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .4}
     to {opacity: 1}
 }
 
 @keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .4}
     to {opacity: 1}
 }
 
@@ -190,20 +189,21 @@ img {vertical-align: middle;}
          display: none;
      }
     #map{
-        width: 20%;
-        
+        width: 60%;
+        height: 30%;
+
         background-color: grey;
         margin-left: 10%;
         margin-right: auto;
         position: absolute;
     }
-    
+
     .presentation{
         font-family: 'Parisienne', cursive;
         font-size: 35px;
         padding: 0 30px 0 30px;
     }
-    
+
     .prev, .next,.text {font-size: 11px}
     #grid{
         grid-template-areas:
@@ -297,13 +297,13 @@ img {vertical-align: middle;}
      article.instagram > div#instafeed > div.instaimg > a > img{
         width: 225%;
         margin-top: 5px;
-    } 
+    }
 }
 @media screen and (min-width: 550px) and (max-width: 1024px){
     /*
 Tablets
     */
-    
+
     #nav{
         display: block;
     }
@@ -321,7 +321,7 @@ Tablets
             "footer footer footer footer";
     }
     #grid > header{
-        
+
     }
     #grid > header > a > img{
         width: 100%;
@@ -332,11 +332,11 @@ Tablets
     #menu-btn {
         display: none;
     }
-    
+
     #grid > main > section.main{
     }
     #grid > main > section{
-        
+
     }
     img.uss{
         width: 65%;
@@ -384,7 +384,7 @@ Tablets
     article.instagram > div#instafeed > div.instaimg > a > img{
         width: 95%;
         margin-top: 5px;
-    } 
+    }
 }
 @media screen and (min-width: 1025px){
     /*
@@ -414,7 +414,7 @@ Desktops
     }
     #grid{
         display: grid;
-        
+
         grid-template-columns: auto;
         grid-template-areas:
             "header"
@@ -456,7 +456,7 @@ Desktops
         margin-bottom: -12px;
     }
     footer{
-        margin-top: 20px; 
+        margin-top: 20px;
     }
     footer > a > img.instapic, footer > a > img.facepic{
         width: 50px;
@@ -488,7 +488,7 @@ Desktops
         -webkit-opacity:0.8;
     }
     /* OM OSS  */
-    
+
     div.eight.wide.column > p,div.eight.wide.column > p > em{
         font-size: 130%;
     }
@@ -512,8 +512,8 @@ Desktops
     div.slideshow-container.smycke > a > img{
         width: 50%;
     }
-  
+
     article.instagram > div#instafeed > div.instaimg > a > img{
         width: 100%;
-    } 
+    }
 }
