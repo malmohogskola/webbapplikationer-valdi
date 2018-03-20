@@ -8,10 +8,10 @@ $(document).ready(function() {
 
     var userFeed = new Instafeed({
         get: 'user',
-        userId: '6644124', //valdi __ > 248716294
-        limit: 3,
+        userId: '7329053795', //valdi __ > 248716294
+        limit: 4,
         resolution: 'standard_resolution',
-        accessToken: '6644124.1677ed0.e63015db01954d3d8c26a66e4c20a8b1',
+        accessToken: '7329053795.1677ed0.2aa33fb3efc44f94a4abbc058859b33c',
         sortBy: 'most-recent',
         template: '<div class="instaimg"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
     });
