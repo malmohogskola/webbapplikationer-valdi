@@ -253,6 +253,9 @@ img {vertical-align: middle;}
     #grid > main > section.instagram{
         display: none;
     }
+    #map{
+      display: none;
+    }
     img.uss{
         width: 100%;
     }
