@@ -42,11 +42,7 @@ main.inside-grid.center{
     grid-area: nav;
 }
 #menu-div{
-    background-color: #e0e0d1;
-    box-shadow: 1px 2px #e0e0d1;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 #menu-div:hover {
     background-color: #d6d6c2;
@@ -224,10 +220,7 @@ img {vertical-align: middle;}
         justify-content: center;
         margin-bottom: 20px;
     }
-    #grid > menu > #menu-div{
-        background-color: red;
-        border: 1px black;
-    }
+    
     #grid > nav{
         display: none;
     }
