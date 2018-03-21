@@ -32,6 +32,8 @@ main.inside-grid.center{
     width: 99%;
     margin-left: auto;
     margin-right: auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
 }
 #grid > header{
     grid-area: header;
@@ -54,6 +56,7 @@ main.inside-grid.center{
 }
 #grid > main{
     grid-area: main;
+    margin-bottom: 50px;
 }
 iframe{
     width: 100%;
@@ -61,6 +64,7 @@ iframe{
 #grid > footer{
     grid-area: footer;
     text-align: center;
+    padding-bottom: 10px;
 }
 /* Start */
 a.card{
