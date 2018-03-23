@@ -11,5 +11,5 @@ $('.ui.dropdown')
 /*Responsiv mobilmeny*/
 if ($(window).width() < 550) {
  $('#dropdown-rings').remove();
- $('#navigering').prepend("<a class='item' href='ringar/forlovningsringar.html'>Förlovningsringar</a>" + "<a class='item' href='ringar/vigselringar.html'>Vigselringar</a>", "<a class='item' href='ringar/ringar.html'>Ringar</a>");
+ $('#navigering').prepend("<a class='item' href='ringar/forlovningsringar.html'>Förlovningsringar</a>" + "<a class='item' href='ringar/vigselringar.html'>Vigselringar</a>", "<a class='item' href='ringar/ringar.html'>Övriga Ringar</a>");
 };
