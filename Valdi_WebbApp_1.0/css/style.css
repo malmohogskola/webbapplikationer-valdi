@@ -177,10 +177,10 @@ img {vertical-align: middle;}
     to {opacity: 1}
 }
 
-
-
-
-
+/* Varumärken */
+.items{
+    padding: 10px;
+}
 
 @media screen and (max-width: 550px){
     /*
